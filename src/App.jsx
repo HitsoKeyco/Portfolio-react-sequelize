@@ -115,11 +115,10 @@ function App() {
               </div>
 
               <div className="section_2_right">
-                <Canvas shadows camera={{ position: [-0.2, 0.4, -1.5], fiv: 30 }}>
-                  <OrbitControls />
-                  <ambientLight intensity={3} />
-                  <Shop />
-                </Canvas>
+                <div className="app_windows_png">
+                  <img className="windowsimg" src="/windows.png" alt="" />
+                </div>
+
               </div>
             </div>
 
@@ -262,8 +261,8 @@ function App() {
               </a>
             </div>
           </div>
-
         </section>
+
         <section id='section5'>
           <Element className="contact" name="contact"><h3><span className='title_mq'>&lt;</span>{languaje ? 'Contacto' : 'Contact'}<span className='title_mq'>&gt;</span></h3></Element>
           <form onSubmit={handleSubmit(submit)}>
@@ -292,7 +291,7 @@ function App() {
               <textarea className="textArea_form" name="" id="" cols="30" rows="10" {...register('message', { required: true })}></textarea>
               {errors.message && <span>{languaje ? 'Este campo es requerido' : 'this field is required'}</span>}
             </div>
-            
+
             <button className='button_form'>{languaje ? 'Enviar' : 'Submit'}</button>
             {isLoading && <LoadingScreen />}
             <Notification
