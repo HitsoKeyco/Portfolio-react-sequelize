@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.2135mm" height="11.2088mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2.58 2.58"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:none}
+    .fil1 {fill:#053100}
+    .fil4 {fill:url(#id3)}
+    .fil0 {fill:url(#id4)}
+    .fil3 {fill:url(#id5)}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M0.86 0l1.72 0 0 1.72c0,0.47 -0.39,0.86 -0.86,0.86l-0.86 0c-0.47,0 -0.86,-0.39 -0.86,-0.86l0 -0.86c0,-0.47 0.39,-0.86 0.86,-0.86z"/>
+    </clipPath>
+      <mask id="id1">
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="1.24" y1="1.52" x2="0.19" y2="2.09">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+       <rect style="fill:url(#id2)" x="-0.79" y="0.71" width="2.8" height="2.82"/>
+      </mask>
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="1.92" y1="2.01" x2="1.83" y2="2.11">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#91C796"/>
+  </linearGradient>
+  <linearGradient id="id4" gradientUnits="userSpaceOnUse" x1="1.07" y1="0.56" x2="1.07" y2="2.5">
+   <stop offset="0" style="stop-opacity:1; stop-color:#14EA32"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#08590C"/>
+  </linearGradient>
+  <linearGradient id="id5" gradientUnits="userSpaceOnUse" xlink:href="#id3" x1="1.28" y1="1.24" x2="1.04" y2="1.48">
+  </linearGradient>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_1594022976240">
+   <path class="fil0" d="M0.86 0l1.72 0 0 1.72c0,0.47 -0.39,0.86 -0.86,0.86l-0.86 0c-0.47,0 -0.86,-0.39 -0.86,-0.86l0 -0.86c0,-0.47 0.39,-0.86 0.86,-0.86z"/>
+   <g style="clip-path:url(#id0)">
+    <g>
+     <polygon id="1" class="fil1" style="mask:url(#id1)" points="0.57,0.73 0.46,0.78 -0.77,2.02 0.57,3.5 1.98,2.08 1.93,1.83 "/>
+    </g>
+   </g>
+   <path class="fil2" d="M0.86 0l1.72 0 0 1.72c0,0.47 -0.39,0.86 -0.86,0.86l-0.86 0c-0.47,0 -0.86,-0.39 -0.86,-0.86l0 -0.86c0,-0.47 0.39,-0.86 0.86,-0.86z"/>
+   <g>
+    <path class="fil3" d="M0.92 1.36l0.67 0.68c0.01,0.01 0.04,0.02 0.05,0.01 0.03,-0.02 0.07,-0.02 0.1,0 0.02,0.01 0.04,0.01 0.05,-0.01l0.13 -0.13c0.01,-0.01 0.02,-0.04 0.01,-0.05 -0.02,-0.03 -0.02,-0.07 0,-0.1 0.01,-0.02 0.01,-0.04 -0.01,-0.05l-0.67 -0.68 -0 0 -0.45 -0.47c-0.02,-0.03 -0.06,-0.03 -0.09,-0l-0.25 0.24c-0.03,0.02 -0.03,0.06 -0,0.09l0.46 0.48 -0 0z"/>
+    <path class="fil4" d="M1.97 1.96l0.01 0.11c0,0 -0,0.01 -0,0.01 -0,0 -0.01,0 -0.01,0l-0.11 -0.01c-0,-0 -0.01,-0 -0.01,-0.01 -0,-0 -0,-0.01 0,-0.01l0.1 -0.1c0,-0 0.01,-0 0.01,-0 0,0 0.01,0.01 0.01,0.01z"/>
+   </g>
+  </g>
+ </g>
+</svg>
