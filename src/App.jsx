@@ -56,11 +56,11 @@ function App() {
             <Link onClick={scrollToTop} spy={true} smooth={true} offset={-70} duration={500}><h1 className='app_logo' style={{ cursor: "pointer"}}>.oS</h1></Link>
             <div className="app_menu">
               <ul className='app_ul'>
-                <li  className='app_li'><Link to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70}> {languaje ? 'Acerca de mi' : 'About me'} </Link></li>
-                <li  className='app_li'><Link to="projects" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
-                <li  className='app_li'><Link to="academic" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Academico' : 'Academic'} </Link></li>
-                <li className='app_li'><a href="/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-                <li  className='app_li'><Link to="contact" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
+                <li  className='app_li'><Link className='app_li' to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70}> {languaje ? 'Acerca de mi' : 'About me'} </Link></li>
+                <li  className='app_li'><Link className='app_li' to="projects" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
+                <li  className='app_li'><Link className='app_li' to="academic" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Academico' : 'Academic'} </Link></li>
+                <li className='app_li'><a className='app_li' href="/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+                <li  className='app_li'><Link className='app_li' to="contact" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
                 <div className="languaje" onClick={handleLanguaje}>{languaje ? <span className='en'>EN</span> : <span className='es'>ES</span>}</div>
               </ul>
             </div>
@@ -74,11 +74,11 @@ function App() {
                 ? <div className="menu_movil">
                   <i className='bx bx-x' onClick={handleMenu} style={{ color: '#ffffff' }} ></i>
                   <ul className='menu_movil_ul'>
-                    <li className='menu_movil_li'><Link to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70} onClick={handleMenu}>{languaje ? 'Acerca de mi' : 'About me'}</Link></li>
-                    <li className='menu_movil_li'><Link to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
-                    <li className='menu_movil_li'><Link to="academic" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Academico' : 'Academic'} </Link></li>
-                    <li className='menu_movil_li' style={{ paddingLeft: "10px"}}>CV</li>
-                    <li className='menu_movil_li'><Link to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={handleMenu}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
+                    <li className='menu_movil_li'><Link className='app_li' to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70} onClick={handleMenu}>{languaje ? 'Acerca de mi' : 'About me'}</Link></li>
+                    <li className='menu_movil_li'><Link className='app_li' to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
+                    <li className='menu_movil_li'><Link className='app_li' to="academic" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Academico' : 'Academic'} </Link></li>
+                    <li className='menu_movil_li app_li' style={{ paddingLeft: "10px"}} >CV</li>
+                    <li className='menu_movil_li'><Link className='app_li' to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={handleMenu}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
                   </ul>
                 </div>
                 : ''
