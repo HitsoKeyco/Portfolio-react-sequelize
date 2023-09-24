@@ -19,6 +19,9 @@ html {
   width: 100%;
 }
 
+body{
+  background-color: var(--bgColor);
+}
 .app_menu {
   display: none
 }
@@ -66,7 +69,7 @@ button:hover {
 
 #section1, #section2, #section3, #section4 {  
   width: 100%;
-  background-color: var(--bgColor);
+  max-width: 1600px;  
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -75,7 +78,8 @@ button:hover {
 
 #section5{
   width: 100%;
-  background-color: var(--bgColor);
+  max-width: 1600px;
+  
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -84,10 +88,11 @@ button:hover {
 
 
 .app_content_section1 {
-
+  
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;
+  
 
 
 
@@ -153,7 +158,7 @@ button:hover {
 
 .app_logo {
   color: var(--colorText);
-  font-size: 2em;
+  font-size: 2.5em;
   padding-left: 25px;
 }
 
@@ -203,9 +208,10 @@ button:hover {
 
 .info_section_1_ {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 
@@ -333,7 +339,7 @@ button:hover {
 
 .contact_footer{
   width: 100%;
-  max-width: 1400px;
+  max-width: 1600px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -342,6 +348,7 @@ button:hover {
 }
 .contact{
   color: white;
+  
 }
 .academic{
   color: white;
@@ -562,7 +569,7 @@ button:hover {
 }
 .contact{
   width: 100%;
-  max-width: 1200px;
+  
 }
 .contact_text {
   color: var(--colorText);
@@ -754,6 +761,7 @@ footer {
 
   .info_section_1_ {
     flex-wrap: nowrap;
+    padding-top: 100px;
   }
 
   .app_windows_png {
