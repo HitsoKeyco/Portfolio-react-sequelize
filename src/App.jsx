@@ -1,15 +1,13 @@
-
 import { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import './App.css'
 import './components/styles/loading-screen.css'
 import LoadingScreen from './components/LoadingScreen';
 import Notification from './components/Notification';
-import { Link, Element, animateScroll as scroll } from 'react-scroll';
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import axios from './utils/axios';
-import { OrbitControls } from '@react-three/drei';
-import { Shop } from './components/Shop';
-import { Canvas } from 'react-three-fiber';
+
 
 
 
@@ -37,8 +35,6 @@ function App() {
     })
   }
 
-
-
   const handleMenu = () => {
     setIsOpen(!isOpen)
   }
@@ -47,20 +43,24 @@ function App() {
     setlanguaje(!languaje)
   }
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  }
+
 
   return (
     <>
       <div className="app_content">
         <div className="app_header">
           <div className="nav_container">
-            <h1 className='app_logo'>.oS</h1>
+            <Link onClick={scrollToTop} spy={true} smooth={true} offset={-70} duration={500}><h1 className='app_logo' style={{ cursor: "pointer"}}>.oS</h1></Link>
             <div className="app_menu">
               <ul className='app_ul'>
-                <Link to="aboutMe" spy={true} smooth={true} offset={-70} duration={500}><li onClick={() => scroll.scrollToTop()} className='app_li'> {languaje ? 'Acerca de mi' : 'About me'} </li></Link>
-                <Link to="projects" spy={true} smooth={true} offset={-70} duration={500}><li onClick={() => scroll.scrollToTop()} className='app_li'> {languaje ? 'Proyectos' : 'Projects'} </li></Link>
-                <Link to="academic" spy={true} smooth={true} offset={-70} duration={500}><li onClick={() => scroll.scrollToTop()} className='app_li'> {languaje ? 'Academico' : 'Academic'} </li></Link>
-                <li className='app_li'>CV</li>
-                <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}><li onClick={() => scroll.scrollToTop()} className='app_li'> {languaje ? 'Contacto' : 'Contact'} </li></Link>
+                <li  className='app_li'><Link to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70}> {languaje ? 'Acerca de mi' : 'About me'} </Link></li>
+                <li  className='app_li'><Link to="projects" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
+                <li  className='app_li'><Link to="academic" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Academico' : 'Academic'} </Link></li>
+                <li className='app_li'><a href="/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+                <li  className='app_li'><Link to="contact" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
                 <div className="languaje" onClick={handleLanguaje}>{languaje ? <span className='en'>EN</span> : <span className='es'>ES</span>}</div>
               </ul>
             </div>
@@ -74,11 +74,11 @@ function App() {
                 ? <div className="menu_movil">
                   <i className='bx bx-x' onClick={handleMenu} style={{ color: '#ffffff' }} ></i>
                   <ul className='menu_movil_ul'>
-                    <li className='menu_movil_li'>{languaje ? 'Acerca de mi' : 'About me'}</li>
-                    <li className='menu_movil_li'>{languaje ? 'Proyectos' : 'Projects'}</li>
-                    <li className='menu_movil_li'>{languaje ? 'Academico' : 'Academic'}</li>
-                    <li className='menu_movil_li'>CV</li>
-                    <li className='menu_movil_li'>{languaje ? 'Contacto' : 'Contact'}</li>
+                    <li className='menu_movil_li'><Link to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70} onClick={handleMenu}>{languaje ? 'Acerca de mi' : 'About me'}</Link></li>
+                    <li className='menu_movil_li'><Link to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
+                    <li className='menu_movil_li'><Link to="academic" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Academico' : 'Academic'} </Link></li>
+                    <li className='menu_movil_li' style={{ paddingLeft: "10px"}}>CV</li>
+                    <li className='menu_movil_li'><Link to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={handleMenu}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
                   </ul>
                 </div>
                 : ''
@@ -266,7 +266,7 @@ function App() {
         <section id='section5'>
           <Element className="contact" name="contact"><h3><span className='title_mq'>&lt;</span>{languaje ? 'Contacto' : 'Contact'}<span className='title_mq'>&gt;</span></h3></Element>
           <form onSubmit={handleSubmit(submit)}>
-            <h3 className='contact_text'>{languaje ? 'Contacto' : 'Contact'}</h3>
+            <h3 className='contact_text'>{languaje ? 'Contact me 🤝' : 'Contactame 🤝'}</h3>
             <div className="container_name_phone">
               <div className="name_container">
                 <label className="label_form">{languaje ? 'Nombre' : 'Name'} </label>
@@ -301,10 +301,10 @@ function App() {
           </form>
 
         </section>
-        <section>
 
+        
           <footer>
-            <article className="contact" id="contact">
+            <article className="contact_footer" id="contact">
               <div className="elements">
                 <div className="items">
                   <i className='bx bxl-github img_contact'></i>
@@ -329,7 +329,7 @@ function App() {
             </article>
 
           </footer>
-        </section>
+        
 
       </div>
     </>
