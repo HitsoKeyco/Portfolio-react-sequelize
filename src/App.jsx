@@ -77,7 +77,7 @@ function App() {
                     <li className='menu_movil_li'><Link className='app_li' to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70} onClick={handleMenu}>{languaje ? 'Acerca de mi' : 'About me'}</Link></li>
                     <li className='menu_movil_li'><Link className='app_li' to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
                     <li className='menu_movil_li'><Link className='app_li' to="academic" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Academico' : 'Academic'} </Link></li>
-                    <li className='menu_movil_li app_li' style={{ paddingLeft: "10px"}} >CV</li>
+                    <li className='menu_movil_li app_li' style={{ paddingLeft: "10px"}} onClick={handleMenu}><a className='app_li' href="/CV.pdf" target="_blank" rel="noopener noreferrer" >CV</a></li>
                     <li className='menu_movil_li'><Link className='app_li' to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={handleMenu}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
                   </ul>
                 </div>
