@@ -53,14 +53,14 @@ function App() {
       <div className="app_content">
         <div className="app_header">
           <div className="nav_container">
-            <Link onClick={scrollToTop} spy={true} smooth={true} offset={-70} duration={500}><h1 className='app_logo' style={{ cursor: "pointer"}}>.oS</h1></Link>
+            <Link onClick={scrollToTop} spy={true} smooth={true} offset={-70} duration={500}><h1 className='app_logo' style={{ cursor: "pointer" }}>.oS</h1></Link>
             <div className="app_menu">
               <ul className='app_ul'>
-                <li  className='app_li'><Link className='app_li' to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70}> {languaje ? 'Acerca de mi' : 'About me'} </Link></li>
-                <li  className='app_li'><Link className='app_li' to="projects" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
-                <li  className='app_li'><Link className='app_li' to="academic" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Academico' : 'Academic'} </Link></li>
+                <li className='app_li'><Link className='app_li' to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70}> {languaje ? 'Acerca de mi' : 'About me'} </Link></li>
+                <li className='app_li'><Link className='app_li' to="projects" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
+                <li className='app_li'><Link className='app_li' to="academic" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Academico' : 'Academic'} </Link></li>
                 <li className='app_li'><a className='app_li' href="/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
-                <li  className='app_li'><Link className='app_li' to="contact" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
+                <li className='app_li'><Link className='app_li' to="contact" spy={true} smooth={true} offset={-70} duration={500}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
                 <div className="languaje" onClick={handleLanguaje}>{languaje ? <span className='en'>EN</span> : <span className='es'>ES</span>}</div>
               </ul>
             </div>
@@ -77,7 +77,7 @@ function App() {
                     <li className='menu_movil_li'><Link className='app_li' to="aboutMe" activeClass="active" spy={false} smooth={true} duration={500} offset={-70} onClick={handleMenu}>{languaje ? 'Acerca de mi' : 'About me'}</Link></li>
                     <li className='menu_movil_li'><Link className='app_li' to="projects" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Proyectos' : 'Projects'} </Link></li>
                     <li className='menu_movil_li'><Link className='app_li' to="academic" spy={true} smooth={true} offset={-70} duration={500} onClick={handleMenu}> {languaje ? 'Academico' : 'Academic'} </Link></li>
-                    <li className='menu_movil_li app_li' style={{ paddingLeft: "10px"}} onClick={handleMenu}><a className='app_li' href="/CV.pdf" target="_blank" rel="noopener noreferrer" >CV</a></li>
+                    <li className='menu_movil_li app_li' style={{ paddingLeft: "10px" }} onClick={handleMenu}><a className='app_li' href="/CV.pdf" target="_blank" rel="noopener noreferrer" >CV</a></li>
                     <li className='menu_movil_li'><Link className='app_li' to="contact" spy={true} smooth={true} offset={-100} duration={500} onClick={handleMenu}> {languaje ? 'Contacto' : 'Contact'} </Link></li>
                   </ul>
                 </div>
@@ -192,7 +192,7 @@ function App() {
           <div className="projects_container">
             <div className="proyect">
               <div className="proyect_img_container">
-                <div className="transparent_hover"><i className='bx bx-show'></i></div>
+                <div className="transparent_hover"><a href='https://tecnomania.netlify.app/'><i className='bx bx-show'></i></a></div>
                 <img className="proyect_img" src="/ecommerce1.png" alt="" />
               </div>
               <div className="details_proyect">
@@ -213,7 +213,7 @@ function App() {
 
             <div className="proyect">
               <div className="proyect_img_container">
-                <div className="transparent_hover"><i className='bx bx-show'></i></div>
+                <div className="transparent_hover"><a href='https://tecnomania.netlify.app/'><i className='bx bx-show'></i></a></div>
                 <img className="proyect_img" src="/ecommerce2.jpg" alt="" />
               </div>
               <div className="details_proyect">
@@ -244,8 +244,8 @@ function App() {
             </div>
 
             <div className="certificate">
-              <a className="link_certificate" target="_blank" href="https://certificates.academlo.com/en/verify/17035174719055">
-                <img className="certificate_img" src="https://verified-bucket.s3.eu-central-1.amazonaws.com/cert/17035174719055.png" alt="" />
+              <a className="link_certificate" target="blank" href="https://certificates.academlo.com/en/verify/54052267171091">
+                <img className="certificate_img" src="https://verified-bucket.s3.eu-central-1.amazonaws.com/cert/54052267171091.png" alt="" />
               </a>
             </div>
 
@@ -302,34 +302,34 @@ function App() {
 
         </section>
 
-        
-          <footer>
-            <article className="contact_footer" id="contact">
-              <div className="elements">
-                <div className="items">
-                  <i className='bx bxl-github img_contact'></i>
-                  <a className='link_footer' target="_blank"
-                    href="https://github.com/HitsoKeyco">https://github.com/HitsoKeyco</a>
-                </div>
-                <div className="items">
-                  <i className='bx bxl-linkedin-square img_contact'></i>
-                  <a className='link_footer' target="_blank"
-                    href="https://www.linkedin.com/in/sergiolivo/">https://www.linkedin.com/in/sergiolivo/</a>
-                </div>
-                <div className="items">
-                  <i className='bx bxl-gmail img_contact'></i>
-                  <a className='link_footer' target="_blank" href="https://gmail.com">olivosergio09@gmail.com</a>
-                </div>
 
-                <p className='derechos'>&copy; {languaje ? 'Derechos Reservados 2023' : 'All Rights Reserved 2023'}</p>
+        <footer>
+          <article className="contact_footer" id="contact">
+            <div className="elements">
+              <div className="items">
+                <i className='bx bxl-github img_contact'></i>
+                <a className='link_footer' target="_blank"
+                  href="https://github.com/HitsoKeyco">https://github.com/HitsoKeyco</a>
               </div>
-              <a className='link_footer' target="_blank" href="https://wa.link/tmbgbo">
-                <img className="logoWhatsapp" src="/logoWhatsapp.svg" alt="" />
-              </a>
-            </article>
+              <div className="items">
+                <i className='bx bxl-linkedin-square img_contact'></i>
+                <a className='link_footer' target="_blank"
+                  href="https://www.linkedin.com/in/sergiolivo/">https://www.linkedin.com/in/sergiolivo/</a>
+              </div>
+              <div className="items">
+                <i className='bx bxl-gmail img_contact'></i>
+                <a className='link_footer' target="_blank" href="https://gmail.com">olivosergio09@gmail.com</a>
+              </div>
 
-          </footer>
-        
+              <p className='derechos'>&copy; {languaje ? 'Derechos Reservados 2023' : 'All Rights Reserved 2023'}</p>
+            </div>
+            <a className='link_footer' target="_blank" href="https://wa.link/tmbgbo">
+              <img className="logoWhatsapp" src="/logoWhatsapp.svg" alt="" />
+            </a>
+          </article>
+
+        </footer>
+
 
       </div>
     </>
