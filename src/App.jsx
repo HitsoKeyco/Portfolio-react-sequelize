@@ -51,6 +51,7 @@ function App() {
   return (
     <>
       <div className="app_content">
+                    
         <div className="app_header">
           <div className="nav_container">
             <Link onClick={scrollToTop} spy={true} smooth={true} offset={-70} duration={500}><h1 className='app_logo' style={{ cursor: "pointer" }}>.oS</h1></Link>
@@ -192,7 +193,7 @@ function App() {
           <div className="projects_container">
             <div className="proyect">
               <div className="proyect_img_container">
-                <div className="transparent_hover"><a href='https://tecnomania.netlify.app/'><i className='bx bx-show'></i></a></div>
+                <div className="transparent_hover"><a href='https://ecommercesergiolivo.netlify.app/'><i className='bx bx-show'></i></a></div>
                 <img className="proyect_img" src="/ecommerce1.png" alt="" />
               </div>
               <div className="details_proyect">
@@ -305,6 +306,8 @@ function App() {
 
         <footer>
           <article className="contact_footer" id="contact">
+          
+              
             <div className="elements">
               <div className="items">
                 <i className='bx bxl-github img_contact'></i>
@@ -322,6 +325,7 @@ function App() {
               </div>
 
               <p className='derechos'>&copy; {languaje ? 'Derechos Reservados 2023' : 'All Rights Reserved 2023'}</p>
+              
             </div>
             <a className='link_footer' target="_blank" href="https://wa.link/tmbgbo">
               <img className="logoWhatsapp" src="/logoWhatsapp.svg" alt="" />
