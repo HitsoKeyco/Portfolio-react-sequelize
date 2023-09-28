@@ -1,0 +1,54 @@
+
+/* Estilos para la tarjeta */
+
+.stars-container {
+    width: 100%;       
+    overflow: hidden;    
+}
+
+/* Estilos para las estrellas */
+.star {
+    background-color: #b6ada45c;
+    /* Color de las estrellas */
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Estilo de atenuación de las estrellas */
+.star.fade-out {
+    opacity: 0.3;
+    /* Puedes ajustar la opacidad según tus preferencias */
+}
+
+
+.star.star-shine {
+    /* Estilos para las estrellas que brillan */
+    animation: shine 3s ease-in-out infinite;
+    /* Animación de brillo */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

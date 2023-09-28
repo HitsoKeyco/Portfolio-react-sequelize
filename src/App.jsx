@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import './App.css'
+import './start.css'
+import './start.js'
 import './components/styles/loading-screen.css'
 import LoadingScreen from './components/LoadingScreen';
 import Notification from './components/Notification';
-import * as Scroll from 'react-scroll';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import axios from './utils/axios';
+
 
 
 
@@ -50,7 +52,7 @@ function App() {
 
   return (
     <>
-      <div className="app_content">
+      <div className="app_content stars-container">
                     
         <div className="app_header">
           <div className="nav_container">

@@ -4,11 +4,12 @@
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
 
 }
 
 :root {
-  --colorText: rgb(240, 238, 238);
+  --colorText: rgb(229, 226, 226);
   --greenPrimavera: #33CC33;
   --orange: #FF6600;
   --bgColor: #0d1117;
@@ -20,7 +21,9 @@ html {
 }
 
 body{
-  background-color: var(--bgColor);
+  background-image: linear-gradient(to bottom, #0f0f17, #0b0b0c);  
+  
+  height: max-content;
 }
 .app_menu {
   display: none
@@ -216,14 +219,14 @@ button:hover {
 }
 
 
-.section_1_left {
+/* .section_1_left {
   background-image: url('/section_1_svg_back.svg');
   background-position: center;
   background-size: 100%;
   background-repeat: round;
 
 
-}
+} */
 
 .section_2_right {
   width: 100%;
@@ -518,7 +521,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  background-color: var(--bgColor);
+  
   gap: 25px;
   
 
@@ -725,10 +728,11 @@ footer {
   align-items: center;
   flex-direction: column;
   height: 250px;
-  background-color: #21262d;
-  background-image: url('footer.png');
+  
+  
   border: none;
   padding: 0 25px;
+  
 }
 
 
@@ -753,7 +757,7 @@ footer {
 
   }
   #section1,#section2,#section3,#section4{
-    height: 100vh;
+    
   }
 
   .app_text_section_1 {
