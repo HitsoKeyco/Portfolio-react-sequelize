@@ -1,7 +1,14 @@
-// Función para crear estrellas y agregarlas al contenedor
 function createStars() {
     const starsContainer = document.querySelector('.stars-container');
-    const containerHeight = starsContainer.clientHeight; // Obtiene la altura del contenedor
+    let containerHeight = starsContainer.clientHeight; // Inicialmente, obtiene la altura del contenedor
+
+    // Función para actualizar la altura del contenedor
+    const updateContainerHeight = () => {
+        containerHeight = starsContainer.clientHeight;
+    };
+
+    // Llama a la función de actualización cuando la ventana cambie de tamaño
+    window.addEventListener('resize', updateContainerHeight);
 
     for (let i = 0; i < 5000; i++) {
         const star = document.createElement('div');
@@ -25,6 +32,7 @@ function createStars() {
         starsContainer.appendChild(star);
     }
 }
+
 
 
 // Llama a la función para crear estrellas cuando se carga la página
